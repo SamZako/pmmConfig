@@ -49,3 +49,8 @@ collections:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113267}
         tmdb_network: 77
         summary: Shows Aired on SYFY
+ IFC:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113189}
+        tmdb_network: 124
+        summary: Shows Aired on IFC
+
