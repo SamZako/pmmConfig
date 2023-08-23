@@ -1,0 +1,105 @@
+templates:
+  Person:
+    smart_filter:
+      any:
+        actor: tmdb
+        director: tmdb
+        writer: tmdb
+        producer: tmdb
+      sort_by: release.desc
+      validate: false
+    tmdb_person: <<person>>
+    sort_title: +6_<<collection_name>>
+    url_poster:
+    radarr_add_missing: false
+
+
+collections:
+
+######################################################
+#                 List Collections                   #
+######################################################
+  Best Picture Winners:
+    imdb_list: https://www.imdb.com/list/ls062667125/
+    summary: A collection of all Oscar winners.
+    sort_title: '03'
+    collection_order: release.desc
+    #schedule: monthly(1), monthly(15)
+    collection_mode: default
+    sync_mode: sync
+  Best Picture Nominees:
+    imdb_list: https://www.imdb.com/list/ls009487211/
+    summary: A collection of all Oscar nominees.
+    sort_title: '04'
+    collection_order: release.desc
+    #schedule: monthly(1), monthly(15)
+    collection_mode: default
+    sync_mode: sync
+  IMDb Top 250:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
+    sync_mode: sync
+    sort_title: "/003"
+    collection_order: alpha
+    #schedule: monthly(1), monthly(15)
+    collection_mode: default
+
+######################################################
+#                 TMDB Collections                   #
+######################################################
+
+  The Godfather:
+    tmdb_collection: 230
+    tmdb_summary: 230
+    collection_mode: hide
+  Harry Potter:
+    tmdb_collection: 1241
+    tmdb_summary: 1241
+    collection_mode: hide
+  A Nightmare on Elm Street Collection:
+    tmdb_collection: 1241
+    tmdb_summary: 1241
+    collection_mode: hide
+  Quentin Tarantino:
+    template: {name: Person, person: 138}
+  Martin Scorsese:
+    template: {name: Person, person: 1032}
+  Steven Spielberg:
+    template: {name: Person, person: 488}
+  George Lucas:
+    template: {name: Person, person: 1}
+  Robert Zemeckis:
+    template: {name: Person, person: 24}
+  James Cameron:
+    template: {name: Person, person: 2710}
+  Spike Lee:
+    template: {name: Person, person: 388}
+  Christopher Nolan:
+    template: {name: Person, person: 525}
+  Alfred Hitchcock:
+    template: {name: Person, person: 2636}
+  Bruce Lee:
+    template: {name: Person, person: 12429}
+  Stanley Kubrick:
+    template: {name: Person, person: 240}
+  Robin Williams:
+    template: {name: Person, person: 2157}
+  Tim Burton:
+    template: {name: Person, person: 510}
+  Greta Gerwig:
+    template: {name: Person, person: 45400}
+  Saorsie Ronan:
+    template: {name: Person, person: 36592}
+  Aaron Sorkin:
+    template: {name: Person, person: 13520}
+  Chadwick Boseman:
+    template: {name: Person, person: 172069}
+  Taika Waititi:
+    template: {name: Person, person: 55934}
+  Wes Craven:
+    template: {name: Person, person: 5140}
+  George A. Romero:
+    template: {name: Person, person: 14999}
+  Jackie Chan:
+    template: {name: Person, person: 18896}
+  John Carpenter:
+    template: {name: Person, person: 2108522}

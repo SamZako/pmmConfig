@@ -1,0 +1,70 @@
+---
+libraries:
+  Movies:
+    metadata_path:
+      - file: config/Movies.yml
+  TV Shows:
+    metadata_path:
+      - file: config/TV.yml
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  assets_for_all: false
+  sync_mode: append
+  show_unmanaged: true
+  show_filtered: false
+  show_missing: true
+  save_missing: true
+  run_again_delay: 2
+  missing_only_released: false
+  create_asset_folders: false
+  collection_minimum: 1
+  delete_below_minimum: false
+  tvdb_language: default
+  show_missing_assets: true
+  asset_depth: 0
+  dimensional_asset_rename: false
+  show_missing_season_assets: false
+  delete_not_scheduled: false
+  only_filter_missing: false
+  show_options: false
+  ignore_ids: null
+  ignore_imdb_ids: null
+  playlist_sync_to_user: all
+plex:
+  url: http://localhost:32400
+  token: XSKVzHCDb3yZ5ZK3W5BJ
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb:
+  apikey: 4e7b7aa9d9da25e868330c9156e68d8f
+  language: en
+trakt:
+  client_id: fa0af828c6e27305c8a2568f592d5971da8062b010173fd91184440b02e5f9b2
+  client_secret: 40f15d27cd7cffb42e0d07b47c3018ec3a05c2c35ce2a223b0a01bf9bc8ad574
+  authorization:
+    access_token: xxxxxxxxxxxxxxxxxx
+    token_type: xxxxxxxx
+    expires_in: xxxxxxxxxxxxxxxxxx
+    refresh_token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    scope: public
+    created_at: xxxxxxxxxxx
+radarr:
+  url: http://localhost:7878/
+  token: 0fe1f1b97ca94a938649624ef928cf8a
+  root_folder_path: /media/plex/External1/movies
+  monitor: true
+  quality_profile: Any
+  tag: pmm
+  search: false
+  add_existing: true
+  add_missing: true
+  upgrade_existing: false
+  ignore_cache: false
+tautulli:
+  url: http://192.168.0.173:8181
+  apiKey: 6cf0913e7f4845debbe8490f1bc54d5f
