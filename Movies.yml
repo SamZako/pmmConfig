@@ -9,7 +9,6 @@ templates:
     tmdb_person: <<person>>
     sort_title: +6_<<collection_name>>
     url_poster: <<url_poster>>
-    radarr_add_missing: false
   Actor:
     smart_filter:
       any:
@@ -19,7 +18,6 @@ templates:
     tmdb_person: <<person>>
     sort_title: +6_<<collection_name>>
     url_poster: <<url_poster>>
-    radarr_add_missing: false
 collections:
   Best Picture Winners:
     imdb_list: https://www.imdb.com/list/ls062667125/
