@@ -68,3 +68,20 @@ radarr:
 tautulli:
   url: http://192.168.0.173:8181
   apiKey: 6cf0913e7f4845debbe8490f1bc54d5f
+sonarr:
+  url: http://localhost:8989
+  token: http://localhost:7878
+  add_missing: false
+  add_existing: false
+  root_folder_path: /media/plex/External1/tv
+  monitor: all
+  quality_profile: Any
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag:
+  search: false
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+  upgrade_existing: false

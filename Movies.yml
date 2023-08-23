@@ -28,13 +28,6 @@ collections:
     collection_order: release.desc
     collection_mode: default
     sync_mode: sync
-  Best Picture Nominees:
-    imdb_list: https://www.imdb.com/list/ls009487211/
-    summary: A collection of all Oscar nominees.
-    sort_title: "04"
-    collection_order: release.desc
-    collection_mode: default
-    sync_mode: sync
   IMDb Top 250:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
     sync_mode: sync
