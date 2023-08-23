@@ -1,52 +1,46 @@
+---
 templates:
-  Person:
+  Director:
     smart_filter:
       any:
-        actor: tmdb
         director: tmdb
-        writer: tmdb
-        producer: tmdb
       sort_by: release.desc
       validate: false
     tmdb_person: <<person>>
     sort_title: +6_<<collection_name>>
-    url_poster:
+    url_poster: <<url_poster>>
     radarr_add_missing: false
-
-
+  Actor:
+    smart_filter:
+      any:
+        actor: tmdb
+      sort_by: release.desc
+      validate: false
+    tmdb_person: <<person>>
+    sort_title: +6_<<collection_name>>
+    url_poster: <<url_poster>>
+    radarr_add_missing: false
 collections:
-
-######################################################
-#                 List Collections                   #
-######################################################
   Best Picture Winners:
     imdb_list: https://www.imdb.com/list/ls062667125/
     summary: A collection of all Oscar winners.
-    sort_title: '03'
+    sort_title: "03"
     collection_order: release.desc
-    #schedule: monthly(1), monthly(15)
     collection_mode: default
     sync_mode: sync
   Best Picture Nominees:
     imdb_list: https://www.imdb.com/list/ls009487211/
     summary: A collection of all Oscar nominees.
-    sort_title: '04'
+    sort_title: "04"
     collection_order: release.desc
-    #schedule: monthly(1), monthly(15)
     collection_mode: default
     sync_mode: sync
   IMDb Top 250:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
     sync_mode: sync
-    sort_title: "/003"
+    sort_title: /003
     collection_order: alpha
-    #schedule: monthly(1), monthly(15)
     collection_mode: default
-
-######################################################
-#                 TMDB Collections                   #
-######################################################
-
   The Godfather:
     tmdb_collection: 230
     tmdb_summary: 230
@@ -60,46 +54,72 @@ collections:
     tmdb_summary: 1241
     collection_mode: hide
   Quentin Tarantino:
-    template: {name: Person, person: 138}
+    template:
+      name: Director
+      person: 138
+      url_poster: https://theposterdb.com/api/assets/31970
   Martin Scorsese:
-    template: {name: Person, person: 1032}
+    template:
+      name: Director
+      person: 1032
+      url_poster: https://theposterdb.com/api/assets/54286
   Steven Spielberg:
-    template: {name: Person, person: 488}
-  George Lucas:
-    template: {name: Person, person: 1}
-  Robert Zemeckis:
-    template: {name: Person, person: 24}
+    template:
+      name: Director
+      person: 488
+      url_poster: https://theposterdb.com/api/assets/99128
   James Cameron:
-    template: {name: Person, person: 2710}
+    template:
+      name: Director
+      person: 2710
+      url_poster: https://theposterdb.com/api/assets/99130
   Spike Lee:
-    template: {name: Person, person: 388}
+    template:
+      name: Director
+      person: 388
+      url_poster: https://theposterdb.com/api/assets/193316
   Christopher Nolan:
-    template: {name: Person, person: 525}
+    template:
+      name: Director
+      person: 525
+      url_poster: https://theposterdb.com/api/assets/52638
   Alfred Hitchcock:
-    template: {name: Person, person: 2636}
+    template:
+      name: Director
+      person: 2636
+      url_poster: https://theposterdb.com/api/assets/190384
   Bruce Lee:
-    template: {name: Person, person: 12429}
+    template:
+      name: Actor
+      person: 12429
+      url_poster: https://theposterdb.com/api/assets/47421
   Stanley Kubrick:
-    template: {name: Person, person: 240}
-  Robin Williams:
-    template: {name: Person, person: 2157}
+    template:
+      name: Director
+      person: 240
+      url_poster: https://theposterdb.com/api/assets/63124
   Tim Burton:
-    template: {name: Person, person: 510}
-  Greta Gerwig:
-    template: {name: Person, person: 45400}
-  Saorsie Ronan:
-    template: {name: Person, person: 36592}
-  Aaron Sorkin:
-    template: {name: Person, person: 13520}
-  Chadwick Boseman:
-    template: {name: Person, person: 172069}
+    template:
+      name: Director
+      person: 510
+      url_poster: https://theposterdb.com/api/assets/99132
   Taika Waititi:
-    template: {name: Person, person: 55934}
+    template:
+      name: Director
+      person: 55934
+      url_poster: https://theposterdb.com/api/assets/80183
   Wes Craven:
-    template: {name: Person, person: 5140}
-  George A. Romero:
-    template: {name: Person, person: 14999}
+    template:
+      name: Director
+      person: 5140
+      url_poster: https://theposterdb.com/api/assets/99135
   Jackie Chan:
-    template: {name: Person, person: 18896}
+    template:
+      name: Actor
+      person: 18896
+      url_poster: https://theposterdb.com/api/assets/47446
   John Carpenter:
-    template: {name: Person, person: 2108522}
+    template:
+      name: Director
+      person: 2108522
+      url_poster: https://theposterdb.com/api/assets/99129

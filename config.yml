@@ -2,10 +2,10 @@
 libraries:
   Movies:
     metadata_path:
-      - file: config/Movies.yml
+      - file: pmmConfig/Movies.yml
   TV Shows:
     metadata_path:
-      - file: config/TV.yml
+      - file: pmmConfig/TV.yml
 settings:
   cache: true
   cache_expiration: 60
