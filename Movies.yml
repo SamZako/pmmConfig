@@ -45,6 +45,7 @@ collections:
     tmdb_collection: 230
     tmdb_summary: 230
     collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/8934
   Harry Potter:
     tmdb_collection: 1241
     tmdb_summary: 1241
