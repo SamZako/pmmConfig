@@ -62,7 +62,7 @@ radarr:
   tag: pmm
   search: false
   add_existing: true
-  add_missing: true
+  add_missing: false
   upgrade_existing: false
   ignore_cache: false
 tautulli:
