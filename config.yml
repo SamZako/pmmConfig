@@ -70,7 +70,7 @@ tautulli:
   apiKey: 6cf0913e7f4845debbe8490f1bc54d5f
 sonarr:
   url: http://localhost:8989
-  token: http://localhost:7878
+  token: cb799052730a4e7f80e17345a3e0a47d
   add_missing: false
   add_existing: false
   root_folder_path: /media/plex/External1/tv

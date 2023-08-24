@@ -106,7 +106,7 @@ collections:
     sort_title: 5 Scream
     url_poster: https://theposterdb.com/api/assets/77020
   Star Wars:
-    tmdb_collection: 8136
+    tmdb_list: 8136
     tmdb_summary: 8136
     collection_mode: hide
     sort_title: 5 Star Wars
