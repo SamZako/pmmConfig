@@ -4,7 +4,29 @@ templates:
     url_poster: <<poster>>
     sort_title: +++++++_<<collection_name>>
     collection_order: release
+    collection_mode: hide
+  Franchise:
+    optional:
+      - list
+      - show
+    tvdb_list_details: <<list>>
+    tvdb_show: <<show>>
+    url_poster: <<poster>>
+    url_background: <<background>>
+    sync_mode: sync
+    collection_order: release
 collections:
+#   Franchises
+  Law & Order:
+    template: {name: Franchise, show: "72368, 75692, 71489, 328518, 74191, 168161, 383397", poster: https://theposterdb.com/api/assets/57562, background: https://i.imgur.com/6ovPJNP.jpg}
+    summary: Collection of Law & Order Series.
+  Narcos:
+    template: {name: Franchise, show: "282670, 353232", poster: https://theposterdb.com/api/assets/196849, background: https://i.imgur.com/RUqzj0C.jpg}
+    summary: Anthology of Netflix shows about the Columbia and Mexican drug cartells rise to power in the 1980's.
+  Star Wars:
+    template: {name: Franchise, show: "83268, 283468, 385376, 393190, 72244, 351575, 330710, 250498, 356114, 393214, 70399, 73697, 334444, 368742, 380516, 358145, 393199, 393187, 380352, 393218, 361753, 393589, 393189, 393188, 83867", poster: https://theposterdb.com/api/assets/242270, background: https://i.imgur.com/GdLMZko.jpg}
+    summary: Collection of Star Wars TV Series.
+#   Networks
   ABC:
     template:
       name: Studio

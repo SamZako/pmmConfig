@@ -1,6 +1,7 @@
 ---
 # Lists 0
 # Genre 1
+# Decade 2
 # Directors 3
 # Actors 4
 # Franchiese 5
@@ -167,11 +168,6 @@ collections:
       name: Director
       person: 5140
       url_poster: https://theposterdb.com/api/assets/99135
-  Jackie Chan:
-    template:
-      name: Actor
-      person: 18896
-      url_poster: https://theposterdb.com/api/assets/47446
   John Carpenter:
     template:
       name: Director
