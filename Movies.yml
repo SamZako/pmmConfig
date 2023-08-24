@@ -1,4 +1,9 @@
 ---
+# Lists 0
+# Genre 1
+# Directors 3
+# Actors 4
+# Franchiese 5
 templates:
   Director:
     smart_filter:
@@ -7,7 +12,7 @@ templates:
       sort_by: release.asc
       validate: false
     tmdb_person: <<person>>
-    sort_title: +6_<<collection_name>>
+    sort_title: 3 <<collection_name>>
     url_poster: <<url_poster>>
   Actor:
     smart_filter:
@@ -16,35 +21,87 @@ templates:
       sort_by: release.asc
       validate: false
     tmdb_person: <<person>>
-    sort_title: +6_<<collection_name>>
+    sort_title: 4 <<collection_name>>
     url_poster: <<url_poster>>
+    
 collections:
+# Lists
   Best Picture Winners:
     imdb_list: https://www.imdb.com/list/ls062667125/
     summary: A collection of all Oscar winners.
-    sort_title: "03"
+    sort_title: "0 BEST PICTURE"
     collection_order: release.desc
     collection_mode: default
     sync_mode: sync
   IMDb Top 250:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
     sync_mode: sync
-    sort_title: /003
+    sort_title: 0-IMDB TOP 250
     collection_order: alpha
     collection_mode: default
+
+# Franchises
   The Godfather:
     tmdb_collection: 230
     tmdb_summary: 230
     collection_mode: hide
+    sort_title: 5 The Godfather
     url_poster: https://theposterdb.com/api/assets/8934
   Harry Potter:
     tmdb_collection: 1241
     tmdb_summary: 1241
+    sort_title: 5 Harry Potter
     collection_mode: hide
-  A Nightmare on Elm Street Collection:
+  A Nightmare on Elm Street:
     tmdb_collection: 1241
     tmdb_summary: 1241
+    sort_title: 5 Nightmare on Elm Street
     collection_mode: hide
+  Final Destination:
+    tmdb_collection: 8864
+    tmdb_summary: 8864
+    sort_title: 5 Final Destination
+    collection_mode: hide
+  Evil Dead:
+    tmdb_collection: 1960
+    tmdb_summary: 1960
+    sort_title: 5 Evil Dead
+    collection_mode: hide
+  Friday the 13th:
+    tmdb_collection: 9735
+    tmdb_summary: 9735
+    sort_title: 5 Friday the 13th
+    collection_mode: hide
+  Halloween:
+    tmdb_collection: 91361
+    sort_title: 5 Halloween
+    tmdb_summary: 91361
+    collection_mode: hide
+  Rocky:
+    tmdb_collection: 
+      - 1575
+      - 553717
+    tmdb_summary: 
+      - 1575
+    collection_mode: hide
+    sort_title: 5 Rocky
+  Saw:
+    tmdb_collection: 656
+    tmdb_summary: 656
+    collection_mode: hide
+    sort_title: 5 Saw
+  Scream:
+    tmdb_collection: 2602
+    tmdb_summary: 2602
+    collection_mode: hide
+    sort_title: 5 Scream
+  Star Wars:
+    tmdb_collection: 8136
+    tmdb_summary: 8136
+    collection_mode: hide
+    sort_title: 5 Star Wars
+
+# Directors
   Quentin Tarantino:
     template:
       name: Director
@@ -80,11 +137,6 @@ collections:
       name: Director
       person: 2636
       url_poster: https://theposterdb.com/api/assets/190384
-  Bruce Lee:
-    template:
-      name: Actor
-      person: 12429
-      url_poster: https://theposterdb.com/api/assets/47421
   Stanley Kubrick:
     template:
       name: Director
