@@ -52,31 +52,37 @@ collections:
     tmdb_summary: 1241
     sort_title: 5 Harry Potter
     collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/545
   A Nightmare on Elm Street:
     tmdb_collection: 1241
     tmdb_summary: 1241
     sort_title: 5 Nightmare on Elm Street
     collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/545
   Final Destination:
     tmdb_collection: 8864
     tmdb_summary: 8864
     sort_title: 5 Final Destination
     collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/165946
   Evil Dead:
     tmdb_collection: 1960
     tmdb_summary: 1960
     sort_title: 5 Evil Dead
     collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/7313
   Friday the 13th:
     tmdb_collection: 9735
     tmdb_summary: 9735
     sort_title: 5 Friday the 13th
     collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/105488
   Halloween:
     tmdb_collection: 91361
     sort_title: 5 Halloween
     tmdb_summary: 91361
     collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/27113
   Rocky:
     tmdb_collection: 
       - 1575
@@ -85,21 +91,25 @@ collections:
       - 1575
     collection_mode: hide
     sort_title: 5 Rocky
+    url_poster: https://theposterdb.com/api/assets/92602
   Saw:
     tmdb_collection: 656
     tmdb_summary: 656
     collection_mode: hide
     sort_title: 5 Saw
+    url_poster: https://theposterdb.com/api/assets/66955
   Scream:
     tmdb_collection: 2602
     tmdb_summary: 2602
     collection_mode: hide
     sort_title: 5 Scream
+    url_poster: https://theposterdb.com/api/assets/77020
   Star Wars:
     tmdb_collection: 8136
     tmdb_summary: 8136
     collection_mode: hide
     sort_title: 5 Star Wars
+    url_poster: https://theposterdb.com/api/assets/70805
 
 # Directors
   Quentin Tarantino:
