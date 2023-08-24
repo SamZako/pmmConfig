@@ -4,7 +4,7 @@ templates:
     smart_filter:
       any:
         director: tmdb
-      sort_by: release.desc
+      sort_by: release.asc
       validate: false
     tmdb_person: <<person>>
     sort_title: +6_<<collection_name>>
@@ -13,7 +13,7 @@ templates:
     smart_filter:
       any:
         actor: tmdb
-      sort_by: release.desc
+      sort_by: release.asc
       validate: false
     tmdb_person: <<person>>
     sort_title: +6_<<collection_name>>
