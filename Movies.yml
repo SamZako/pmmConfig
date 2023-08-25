@@ -33,7 +33,6 @@ templates:
     visible_home: false
     visible_shared: false
     visible_library: false
-    delete_not_scheduled: false
     cache_builders: 6
     imdb_list:
       url: https://www.imdb.com/search/title/?title_type=<<title_type>>&user_rating=<<user_rating>>&num_votes=<<votes>>&genres=<<genres>>&languages=<<languages>>&sort=user_rating,desc
@@ -199,7 +198,6 @@ collections:
   "Top Rated in Animation":
     summary: "Top rated movies in Animation"
     url_poster: https://images2.imgbox.com/5d/ce/AGI0Qfqm_o.png
-    schedule: weekly(thursday)
     template: {
                     name: genre,
                     genres: "animation",
@@ -211,7 +209,6 @@ collections:
   "Top Rated in Documentary":
     summary: "Top rated movies in Biography"
     url_poster: https://images2.imgbox.com/78/3c/xtirTM6g_o.png
-    schedule: weekly(thursday)
     template: {
                     name: genre,
                     genres: "documentary",
@@ -223,7 +220,6 @@ collections:
   "Top Rated in Comedy":
     summary: "Top rated movies in Comedy"
     url_poster: https://theposterdb.com/api/assets/205179
-    schedule: weekly(thursday)
     template: {
                     name: genre,
                     genres: "comedy",
@@ -235,7 +231,6 @@ collections:
   "Top Rated in Crime":
     summary: "Top rated movies in Crime"
     url_poster: https://theposterdb.com/api/assets/204997
-    schedule: weekly(thursday)
     template: {
                     name: genre,
                     genres: "crime",
@@ -247,7 +242,6 @@ collections:
   "Top Rated in Drama":
     summary: "Top rated movies in Drama"
     url_poster: https://images2.imgbox.com/62/d5/iMGeC44D_o.png
-    schedule: weekly(thursday)
     template: {
                     name: genre,
                     genres: "drama",
@@ -259,7 +253,6 @@ collections:
   "Top Rated in Horror":
     summary: "Top rated movies in Horror"
     url_poster: https://theposterdb.com/api/assets/205196
-    schedule: weekly(thursday)
     template: {
                     name: genre,
                     genres: "horror",
@@ -271,7 +264,6 @@ collections:
   "Top Rated in Mystery":
     summary: "Top rated movies in Mystery"
     url_poster: https://theposterdb.com/api/assets/205001
-    schedule: weekly(thursday)
     template: {
                     name: genre,
                     genres: "mystery",
@@ -283,7 +275,6 @@ collections:
   "Top Rated in War":
     summary: "Top rated movies in War"
     url_poster: https://images2.imgbox.com/52/68/Yc62v6he_o.png
-    schedule: weekly(thursday)
     template: {
                     name: genre,
                     genres: "war",
