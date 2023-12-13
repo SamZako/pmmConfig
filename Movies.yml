@@ -1,43 +1,3 @@
----
-# Lists 0
-# Genre 1
-# Decade 2
-# Directors 3
-# Actors 4
-# Franchiese 5
-templates:
-  Director:
-    smart_filter:
-      any:
-        director: tmdb
-      sort_by: release.asc
-      validate: false
-    tmdb_person: <<person>>
-    sort_title: 3 <<collection_name>>
-    url_poster: <<url_poster>>
-  Actor:
-    smart_filter:
-      any:
-        actor: tmdb
-      sort_by: release.asc
-      validate: false
-    tmdb_person: <<person>>
-    sort_title: 4 <<collection_name>>
-    url_poster: <<url_poster>>
-  genre:
-    sort_title: "1 Rated: <<collection_name>>"
-    limit: 150
-    sync_mode: sync
-    collection_order: custom
-    collection_mode: hide
-    visible_home: false
-    visible_shared: false
-    visible_library: false
-    cache_builders: 6
-    imdb_list:
-      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&user_rating=<<user_rating>>&num_votes=<<votes>>&genres=<<genres>>&languages=<<languages>>&sort=user_rating,desc
-      limit: 250
-
 collections:
 # Lists
   Best Picture Winners:
@@ -51,145 +11,16 @@ collections:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
     sync_mode: sync
     sort_title: 0-IMDB TOP 250
-    collection_order: alpha
+    collection_order: custom
     collection_mode: default
-
-# Franchises
-  The Godfather:
-    tmdb_collection: 230
-    tmdb_summary: 230
-    collection_mode: hide
-    sort_title: 5 Godfather
-    url_poster: https://theposterdb.com/api/assets/8934
-  Harry Potter:
-    tmdb_collection: 1241
-    tmdb_summary: 1241
-    sort_title: 5 Harry Potter
-    collection_mode: hide
-    url_poster: https://theposterdb.com/api/assets/545
-  A Nightmare on Elm Street:
-    tmdb_collection: 1241
-    tmdb_summary: 1241
-    sort_title: 5 Nightmare on Elm Street
-    collection_mode: hide
-    url_poster: https://theposterdb.com/api/assets/545
-  Final Destination:
-    tmdb_collection: 8864
-    tmdb_summary: 8864
-    sort_title: 5 Final Destination
-    collection_mode: hide
-    url_poster: https://theposterdb.com/api/assets/165946
-  Evil Dead:
-    tmdb_collection: 1960
-    tmdb_summary: 1960
-    sort_title: 5 Evil Dead
-    collection_mode: hide
-    url_poster: https://theposterdb.com/api/assets/7313
-  Friday the 13th:
-    tmdb_collection: 9735
-    tmdb_summary: 9735
-    sort_title: 5 Friday the 13th
-    collection_mode: hide
-    url_poster: https://theposterdb.com/api/assets/105488
-  Halloween:
-    tmdb_collection: 91361
-    sort_title: 5 Halloween
-    tmdb_summary: 91361
-    collection_mode: hide
-    url_poster: https://theposterdb.com/api/assets/27113
-  Rocky:
-    tmdb_collection: 
-      - 1575
-      - 553717
-    tmdb_summary: 
-      - 1575
-    collection_mode: hide
-    sort_title: 5 Rocky
-    url_poster: https://theposterdb.com/api/assets/92602
-  Saw:
-    tmdb_collection: 656
-    tmdb_summary: 656
-    collection_mode: hide
-    sort_title: 5 Saw
-    url_poster: https://theposterdb.com/api/assets/66955
-  Scream:
-    tmdb_collection: 2602
-    tmdb_summary: 2602
-    collection_mode: hide
-    sort_title: 5 Scream
-    url_poster: https://theposterdb.com/api/assets/77020
-  Star Wars:
-    tmdb_list: 8136
-    tmdb_summary: 8136
-    collection_mode: hide
-    sort_title: 5 Star Wars
-    url_poster: https://theposterdb.com/api/assets/70805
-  V/H/S:
-    tmdb_list: 207621
-    tmdb_summary: 207621
-    collection_mode: hide
-    sort_title: 5 VHS
-    url_poster: https://image.tmdb.org/t/p/w1280/uSpfqhUF7Zxo5O9ptNlWr4dyqAr.jpg
-    radarr_add_missing: true 
-
-# Directors
-  Quentin Tarantino:
-    template:
-      name: Director
-      person: 138
-      url_poster: https://theposterdb.com/api/assets/31970
-  Martin Scorsese:
-    template:
-      name: Director
-      person: 1032
-      url_poster: https://theposterdb.com/api/assets/54286
-  Steven Spielberg:
-    template:
-      name: Director
-      person: 488
-      url_poster: https://theposterdb.com/api/assets/99128
-  James Cameron:
-    template:
-      name: Director
-      person: 2710
-      url_poster: https://theposterdb.com/api/assets/99130
-  Spike Lee:
-    template:
-      name: Director
-      person: 388
-      url_poster: https://theposterdb.com/api/assets/193316
-  Christopher Nolan:
-    template:
-      name: Director
-      person: 525
-      url_poster: https://theposterdb.com/api/assets/52638
-  Alfred Hitchcock:
-    template:
-      name: Director
-      person: 2636
-      url_poster: https://theposterdb.com/api/assets/190384
-  Stanley Kubrick:
-    template:
-      name: Director
-      person: 240
-      url_poster: https://theposterdb.com/api/assets/63124
-  Tim Burton:
-    template:
-      name: Director
-      person: 510
-      url_poster: https://theposterdb.com/api/assets/99132
-  Taika Waititi:
-    template:
-      name: Director
-      person: 55934
-      url_poster: https://theposterdb.com/api/assets/80183
-  Wes Craven:
-    template:
-      name: Director
-      person: 5140
-      url_poster: https://theposterdb.com/api/assets/99135
-  John Carpenter:
-    template:
-      name: Director
-      person: 2108522
-      url_poster: https://theposterdb.com/api/assets/99129
+  Tight 90:
+    smart_label: title.asc
+    sort_title: '+5_Tight 90'
+    plex_search:
+        all:
+            duration.lte: 99
+            duration.gte: 40
+            genre.not: Documentary, Animation, Short, Stand-Up Comedy
+            label.not: 'Criterion Collection'
+    summary: Movies that are 90 minutes or less.
+    sync_mode: sync
