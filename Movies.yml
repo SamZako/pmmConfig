@@ -8,7 +8,7 @@ collections:
     collection_mode: default
     sync_mode: sync
   IMDb Top 250:
-    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
     sync_mode: sync
     sort_title: 0-IMDB TOP 250
     collection_order: custom
