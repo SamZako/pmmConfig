@@ -1,5 +1,4 @@
 collections:
-# Lists
   Best Picture Winners:
     imdb_list: https://www.imdb.com/list/ls062667125/
     summary: A collection of all Oscar winners.
@@ -7,20 +6,30 @@ collections:
     collection_order: release.desc
     collection_mode: default
     sync_mode: sync
-  IMDb Top 250:
-    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
-    sync_mode: sync
-    sort_title: 0-IMDB TOP 250
+  IMDb Top 250 MOVIES:
+    imdb_chart: top_movies
     collection_order: custom
-    collection_mode: default
-  Tight 90:
-    smart_label: title.asc
-    sort_title: '+5_Tight 90'
-    plex_search:
-        all:
-            duration.lte: 99
-            duration.gte: 40
-            genre.not: Documentary, Animation, Short, Stand-Up Comedy
-            label.not: 'Criterion Collection'
-    summary: Movies that are 90 minutes or less.
     sync_mode: sync
+  Stand-Up Comedy:
+    sort_title: "30 Standup Comedy"
+    tmdb_keyword: 9716
+    collection_order: release.desc
+  Marvel Cinnematic Universe:
+    tmdb_list: 9387
+    collection_order: release.asc
+    url_poster: https://theposterdb.com/api/assets/879
+    sync_mode: sync
+    radarr_add_missing: false
+  Oscars 2024: 
+    imdb_list: https://www.imdb.com/list/ls509332957
+    sort_title: 0 Oscars 2024
+    collection_order: custom
+    sync_mode: sync
+  Tight 90:
+    smart_label: random
+    summary: Movies 90 minutes or less.
+    sort_title: '0 Quick Flicks'
+    collection_mode: default
+    plex_search:
+      duration.lte: 95
+      genre.not: Documentary, Animation, Short, Stand-Up Comedy
