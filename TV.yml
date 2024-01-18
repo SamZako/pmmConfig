@@ -63,6 +63,10 @@ collections:
     template:
       name: network
       network: 1772,453
+  IFC:
+    template:
+      name: network
+      network: 672,124
   MTV:
     template:
       name: network
