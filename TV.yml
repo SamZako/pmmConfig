@@ -107,10 +107,6 @@ collections:
     template:
       name: network
       network: '3706'
-  Viceland:
-    template:
-      name: network
-      network: '1339'
   truTV:
     template:
       name: network
