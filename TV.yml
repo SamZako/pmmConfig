@@ -1,165 +1,117 @@
 collections:
-  A&E:
-    template:
-      name: network
-      network: 5202,3688,2639,129
-      ABC:
+  ABC:
     template:
       name: network
       network: 5345, 5250, 18, 2, 321, 75, 2854, 279, 601, 2488, 1345
-      AMC:
+  AMC:
     template:
       name: network
       network: '174, 4661'
-      Apple TV+:
+  Apple TV+:
     template:
       name: network
       network: '2552'
-      BBC One:
+  BBC One:
     template:
       name: network
       network: 4, 493, 126, 1051, 100, 414, 3590, 375, 428, 3278, 3, 332, 1001, 317, 1155
-      CNN:
+  CNN:
     template:
       name: network
       network: '59'
-      Cartoon Network:
+  Cartoon Network:
     template:
       name: network
       network: 3917,2193,1232,217,56
-      Channel 4:
+  Channel 4:
     template:
       name: network
       network: '26'
-      Cooking Channel:
+  Cooking Channel:
     template:
       name: network
       network: '802'
-      Disney+:
+  Disney+:
     template:
       name: network
       network: 4426,4350,4006,3874,3408,2897,2534,2327,1996,1385,730,539,515,54,835,2771,2325,281,5339,4242,5137,2326,2324,44,2739,3919
-      ESPN:
+  ESPN:
     template:
       name: network
       network: 2540,29,109,1004,297,5374,4132,70,81
-      FOX:
+  FOX:
     template:
       name: network
       network: 303,19
-      FX:
+  FX:
     template:
       name: network
       network: 5405,1641,88,1035
-      G4:
+  G4:
     template:
       name: network
       network: 231,164
-      HBO:
+  HBO:
     template:
       name: network
       network: 3308,49
-      History:
+  History:
     template:
       name: network
       network: 5433,3541,2382,2360,1755,65
-      Hulu:
+  Hulu:
     template:
       name: network
       network: 1772,453
-      MTV:
+  MTV:
     template:
       name: network
       network: 2972,488,33
-      NBA TV:
+  NBA TV:
     template:
       name: network
       network: '301'
-      NBC:
+  NBC:
     template:
       name: network
       network: 2462,6
-      NPR:
+  NPR:
     template:
       name: network
       network: '1813'
-      National Geographic:
+  National Geographic:
     template:
       name: network
       network: 5432,4293,3355,43
-      Netflix:
+  Netflix:
     template:
       name: network
       network: '213'
-      Nick at Nite:
-    template:
-      name: network
-      network: '259'
-      Nickelodeon:
+  Nickelodeon:
     template:
       name: network
       network: 5267,4015,2314,794,775,474,416,286,13
-      PBS:
+  PBS:
     template:
       name: network
       network: '14'
-      Showtime:
+  Showtime:
     template:
       name: network
       network: '67'
-      Spike:
-    template:
-      name: network
-      network: 1735,55
-      Syfy:
-    template:
-      name: network
-      network: 3701,77
-      TNT:
-    template:
-      name: network
-      network: 1191,41
-      UPN:
-    template:
-      name: network
-      network: '40'
-      USA Network:
-    template:
-      name: network
-      network: '30'
-      Universal Channel:
-    template:
-      name: network
-      network: 4014,2238
-      Universal Kids:
-    template:
-      name: network
-      network: '2133'
-      Universal TV:
-    template:
-      name: network
-      network: '3412'
-      VH1:
-    template:
-      name: network
-      network: 2803,158
-      VH1 Classic:
-    template:
-      name: network
-      network: '664'
-      Vice TV:
+  Vice TV:
     template:
       name: network
       network: '3706'
-      Viceland:
+  Viceland:
     template:
       name: network
       network: '1339'
-      truTV:
+  truTV:
     template:
       name: network
       network: '364'
-    templates:
+templates:
   network:
     optional:
     - network
