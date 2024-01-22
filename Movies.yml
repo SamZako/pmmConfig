@@ -37,8 +37,13 @@ collections:
     sort_title: '++++++++++++Trending'
     sync_mode: sync
     smart_label: random
-    trakt_trending: 10
     tmdb_trending_daily: 10
     tmdb_trending_weekly: 10
+    summary: Movies Trending across the internet
+  Now in Theaters:
+    sort_title: '++++++++++++Now Playing'
+    sync_mode: sync
+    smart_label: random
+    tmdb_now_playing: 10
     summary: Movies Trending across the internet
 
