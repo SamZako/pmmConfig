@@ -6,7 +6,7 @@ collections:
     collection_order: release.desc
     collection_mode: default
     sync_mode: sync
-  IMDb Top 250 MOVIES:
+  IMDb Top 250:
     imdb_chart: top_movies
     collection_order: custom
     sync_mode: sync
@@ -34,16 +34,15 @@ collections:
       duration.lte: 95
       genre.not: Documentary, Animation, Short
   Trending:
-    sort_title: '++++++++++++Trending'
+    sort_title: '+++++Trending'
     sync_mode: sync
     smart_label: random
     tmdb_trending_daily: 10
     tmdb_trending_weekly: 10
     summary: Movies Trending across the internet
   Now in Theaters:
-    sort_title: '++++++++++++Now Playing'
+    sort_title: '+++++Now Playing'
     sync_mode: sync
     smart_label: random
     tmdb_now_playing: 10
-    summary: Movies Trending across the internet
-
+    summary: Now Playing in Theaters 
