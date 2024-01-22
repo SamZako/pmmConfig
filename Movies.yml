@@ -28,7 +28,7 @@ collections:
   Tight 90:
     smart_label: random
     summary: Quick Flicks.
-    sort_title: '++++++Tight90'
+    sort_title: '+++++Tight90'
     collection_mode: default
     plex_search:
       duration.lte: 95
