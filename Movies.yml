@@ -32,7 +32,7 @@ collections:
     collection_mode: default
     plex_search:
       duration.lte: 95
-      genre.not: Documentary, Animation, Short, Stand-Up Comedy
+      genre.not: Documentary, Animation, Short
   Trending:
     sort_title: '++++++++++++Trending'
     sync_mode: sync
