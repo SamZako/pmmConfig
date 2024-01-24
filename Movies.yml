@@ -26,7 +26,8 @@ collections:
     sort_title: '++++Tight90'
     collection_mode: default
     plex_search:
-      duration.lte: 95
+      all:
+        duration.lte: 95
   Trending:
     sort_title: '+++++Trending'
     sync_mode: sync
