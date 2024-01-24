@@ -21,7 +21,9 @@ collections:
     sync_mode: sync
     # radarr_add_missing: false
   Oscars 2024: 
-    imdb_award: https://www.imdb.com/event/ev0000003/2024/1/
+    imdb_award: 
+      event_id: ev0000003
+      event_year: 2023
     sort_title: 0 Oscars 2024
     collection_order: custom
     sync_mode: sync
