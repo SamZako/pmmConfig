@@ -25,10 +25,10 @@ collections:
     sort_title: 0 Oscars 2024
     collection_order: custom
     sync_mode: sync
-  Tight 90:
+  Quick Flicks:
     smart_label: random
-    summary: Quick Flicks.
-    sort_title: '++++++Tight90'
+    summary: 95 minutes or Less.
+    sort_title: '++++Tight90'
     collection_mode: default
     plex_search:
       duration.lte: 95
