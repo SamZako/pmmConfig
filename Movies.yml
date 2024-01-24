@@ -19,16 +19,16 @@ collections:
     collection_order: release.asc
     url_poster: https://theposterdb.com/api/assets/879
     sync_mode: sync
-    radarr_add_missing: false
+    # radarr_add_missing: false
   Oscars 2024: 
-    imdb_list: https://www.imdb.com/list/ls509332957
+    imdb_award: https://www.imdb.com/event/ev0000003/2024/1/
     sort_title: 0 Oscars 2024
     collection_order: custom
     sync_mode: sync
-  Quick Flicks:
+  Tight 90:
     smart_label: random
-    summary: 95 minutes or less.
-    sort_title: '+++++Tight90'
+    summary: Quick Flicks.
+    sort_title: '++++++Tight90'
     collection_mode: default
     plex_search:
       duration.lte: 95
