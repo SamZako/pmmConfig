@@ -2,6 +2,11 @@ collections:
   Letterboxd Watchlist:
     radarr_taglist: letterboxd
     sort_title: "+++++Letterboxd"
+    smart_label:
+      sort_by: date_added.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true
   Best Picture Winners:
     imdb_list: https://www.imdb.com/list/ls062667125/
     summary: A collection of all Oscar winners.
