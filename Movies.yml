@@ -1,12 +1,7 @@
 collections:
-  Quick Flicks:
-    smart_label: random
-    summary: 95 minutes or Less.
-    sort_title: '++++Tight90'
-    plex_search:
-      all:
-        duration.lte: 95
-        duration.gte: 40
+  Letterboxd Watchlist:
+    letterboxd_list: https://letterboxd.com/samzako/watchlist/
+    collection_order: custom
     sync_mode: sync
   Best Picture Winners:
     imdb_list: https://www.imdb.com/list/ls062667125/
@@ -29,6 +24,15 @@ collections:
     url_poster: https://theposterdb.com/api/assets/879
     sync_mode: sync
     # radarr_add_missing: false
+  Quick Flicks:
+    smart_label: random
+    summary: 95 minutes or Less.
+    sort_title: '++++Tight90'
+    plex_search:
+      all:
+        duration.lte: 95
+        duration.gte: 40
+    sync_mode: sync
   Trending:
     sort_title: '+++++Trending'
     sync_mode: sync
