@@ -9,6 +9,14 @@ collections:
       sort_by: random
       duration.lte: 95
       duration.gte: 55
+  Short Movies:
+    filter:
+      duration.lte: 95
+      duration.gte: 40
+      plays.lt: 1
+    sync_mode: sync
+    sort_by: random
+    collection_mode: default
   Letterboxd Watchlist:
     radarr_taglist: letterboxd
     sort_title: "+++++Letterboxd"
