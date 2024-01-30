@@ -1,22 +1,9 @@
 collections:
   Quick Flicks:
-    summary: 95 minutes or Less.
-    sort_title: '++++Tight90'
-    smart_label:
+    plex_search:
       all:
-        unplayed: true
-        label: <<smart_label>>
-      sort_by: random
-      duration.lte: 95
-      duration.gte: 55
-  Short Movies:
-    filter:
-      duration.lte: 95
-      duration.gte: 40
-      plays.lt: 1
-    sync_mode: sync
-    sort_by: random
-    collection_mode: default
+        duration.lte: 95
+        duration.gte: 55
   Letterboxd Watchlist:
     radarr_taglist: letterboxd
     sort_title: "+++++Letterboxd"
