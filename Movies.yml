@@ -1,11 +1,11 @@
 collections:
   Quick Flicks:
-    smart_label: random
     summary: 95 minutes or Less.
     sort_title: '++++Tight90'
-    smart_filter:
+    smart_label:
       all:
         unplayed: true
+        label: <<smart_label>>
       sort_by: random
       duration.lte: 95
       duration.gte: 55
