@@ -7,7 +7,7 @@ collections:
         duration.gte: 55
         plays.lt: 1
     sync_mode: sync
-    sort_by: random
+    collection_order: random
   Letterboxd Watchlist:
     radarr_taglist: letterboxd
     sort_title: "+++++Letterboxd"
