@@ -35,7 +35,7 @@ settings:
   playlist_sync_to_user: all
 plex:
   url: http://localhost:32400
-  token: XSKVzHCDb3yZ5ZK3W5BJ
+  token: SqsXytzRNhGci39fhvxS
   timeout: 60
   clean_bundles: false
   empty_trash: false
